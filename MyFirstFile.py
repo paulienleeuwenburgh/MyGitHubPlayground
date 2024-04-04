@@ -1,3 +1,3 @@
 print("hello world")
-name = "beautiful"
-print("hello ",name," world")
+adj = "cruel"
+print("hello",adj,"world")

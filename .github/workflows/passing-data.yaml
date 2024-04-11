@@ -1,4 +1,4 @@
-name: Data Passing Workflos
+name: Data Passing Workflows
 on: [push]
 jobs:
   job1:
@@ -10,7 +10,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: data-artifact
-        path: data.text
+        path: data.txt
   job2:
     needs: job1
     runs-on: ubuntu-latest

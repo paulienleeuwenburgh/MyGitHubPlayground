@@ -1,5 +1,5 @@
 name: Data Passing Workflows
-on: [push]
+on: [workflow-dispatch]
 jobs:
   job1:
     runs-on: ubuntu-latest

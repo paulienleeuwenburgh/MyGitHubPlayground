@@ -42,3 +42,9 @@ jobs:
         run: echo "$MATRIX_CONTEXT"
       - name: Display default variables
         run: echo "this workflow $GITHUB_WORKFLOW was triggered by $GITHUB_ACTOR on the $GITHUB_REPOSITORY repo"
+      - name: condition 1
+        if: runner.os == 'Windows'
+        run: echo "The operating system on the runner is $env:RUNNER_OS."
+      - name: condition 2
+        if: runner.os != 'Windows'
+        run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."

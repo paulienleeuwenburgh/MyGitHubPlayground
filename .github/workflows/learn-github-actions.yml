@@ -40,3 +40,5 @@ jobs:
         env:
           MATRIX_CONTEXT: ${{ toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT"
+      - name: Display default variables
+        run: echo "this workflow $GITHUB_WORKFLOW was triggered by $GITHUB_ACTOR on the $GITHUB_REPOSITORY repo"

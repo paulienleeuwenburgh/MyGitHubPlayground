@@ -11,7 +11,7 @@ jobs:
       - name: echo2
         run: echo '### Love this featire :medal_sports:' >>GITHUB_STEP_SUMMARY
   job2:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Write Summary from Action
         uses: actions/github-script@v6.1.0

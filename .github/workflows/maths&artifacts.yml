@@ -1,4 +1,4 @@
-name: Share data between jobs
+name: maths&artifacts
 
 on: [push, workflow_dispatch]
 
